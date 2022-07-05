@@ -11,20 +11,7 @@ public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         ListNode*temp=headA;
         ListNode*tempb=headB;
-        if(headA==NULL && headB!=NULL){
-            return headB;
-        }
-        else if (headA!=NULL && headB==NULL){
-            return headA;
-        }
-        if(headA->next==NULL && headB->next==NULL){
-            if(headA==headB){
-                return headA;
-            }
-            else{
-                return NULL;
-            }
-        }
+       
         int a=0;
         int b=0;
         int count=0;
